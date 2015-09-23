@@ -1,0 +1,74 @@
+@* This is a comment in scala *@
+
+@(name: String)
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src='@routes.Assets.versioned("javascripts/kickstart.js")'></script>
+    <script src='@routes.Assets.versioned("javascripts/skyShop.js")'></script>
+    <link rel="stylesheet" media="screen" href='@routes.Assets.versioned("stylesheets/kickstart.css")' media="all" />
+    <link rel="stylesheet" media="screen" href='@routes.Assets.versioned("stylesheets/skyShop.css")' />
+
+</head>
+<body>
+
+<div id="easterEggContainer">
+    <div id="easterEgg">
+        <img id="gnome" src="@routes.Assets.versioned("images/gnomeTransparent.jpg")"></img>
+    </div>
+</div>
+<img id="skyLogo" src="@routes.Assets.versioned("images/skyLogo.jpg")"></img>
+<button id="loginButton" class="blue pill">
+    <i class="fa fa-user"></i> Login
+</button>
+
+<!-- Menu Horizontal -->
+<ul class="menu">
+    <li class="current"><a href="">Item 1</a></li>
+    <li><a href="">Item 2</a></li>
+    <li><a href=""><i class="fa fa-inbox"></i> Item 3</a>
+        <ul>
+            <li><a href=""><i class="fa fa-cog"></i> Sub Item</a></li>
+            <li><a href=""><i class="fa fa-envelope"></i> Sub Item</a>
+                <ul>
+                    <li><a href=""><i class="fa fa-wrench"></i> Sub Item</a></li>
+                    <li><a href=""><i class="fa fa-camera-retro"></i> Sub
+                        Item</a></li>
+                    <li><a href=""><i class="fa fa-coffee"></i> Sub Item</a></li>
+                    <li><a href=""><i class="fa fa-twitter"></i> Sub Item</a></li>
+                </ul></li>
+            <li class="divider"><a href=""><i class="fa fa-trash"></i>
+                li.divider</a></li>
+        </ul></li>
+    <li><a href="">Item 4</a></li>
+</ul>
+
+
+<!-- Slideshow -->
+<ul class="slideshow">
+    <li>
+        <h3>Sky Accessories Shop</h3>
+        <p>Welcome to the Sky Accessories Shop</p>
+        </br>
+        <p>Collect as Many Gnomes as possible to win more prizes.</p>
+
+    </li>
+    <li><img
+            src="http://placehold.it/550x350/4D99E0/ffffff.png&text=550x350"
+            width="80%" height="350" /></li>
+    <li><img
+            src="http://placehold.it/550x350/75CC00/ffffff.png&text=550x350"
+            width="80%" height="350" /></li>
+    <li><img
+            src="http://placehold.it/550x350/E49800/ffffff.png&text=550x350"
+            width="80%" height="350" /></li>
+</ul>
+
+
+
+</body>
+</html>

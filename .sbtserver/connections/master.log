@@ -1,0 +1,31 @@
+New log file opened at Wed Sep 23 21:54:32 BST 2015 by 7545@OSTML0195484
+Taking next connection to: 54034
+New client attempting to connect on port: 54035-54034
+  Address = /192.168.1.67:54034
+This client on port 54035 has uuid 2976351c-6c52-4d04-a6cf-7881607ef160 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-2976351c-6c52-4d04-a6cf-7881607ef160
+Taking next connection to: 54034
+New client attempting to connect on port: 54036-54034
+  Address = /192.168.1.67:54034
+Handshake exception on socket: 54036
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 54034
+New client attempting to connect on port: 54037-54034
+  Address = /192.168.1.67:54034
+This client on port 54037 has uuid 86c09acf-4f1a-4dce-9eae-a0a393b61431 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-2976351c-6c52-4d04-a6cf-7881607ef160, activator-86c09acf-4f1a-4dce-9eae-a0a393b61431
+Taking next connection to: 54034
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 7545@OSTML0195484 logs at Wed Sep 23 21:57:32 BST 2015, goodbye.
